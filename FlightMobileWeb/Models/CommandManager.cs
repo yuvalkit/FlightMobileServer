@@ -150,11 +150,11 @@ namespace FlightMobileApp.Models
         {
             // check if the values are close at the deviation range
             double deviation = 0.00001;
-            if (value1 < value2 && value1 + deviation < value2)
+            if ((value1 < value2) && ((value1 + deviation) < value2))
             {
                 return false;
             }
-            if (value1 > value2 && value1 > deviation + value2)
+            if ((value1 > value2) && (value1 > (deviation + value2)))
             {
                 return false;
             }

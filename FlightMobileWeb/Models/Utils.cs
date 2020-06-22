@@ -8,7 +8,8 @@ namespace FlightMobileApp.Models
 {
     public class Utils
     {
-        static public string error = "ERROR";
+        // error status, the same error string as in the simulator
+        static public string error = "ERR";
 
         public bool IsCommandJObjectValid(JObject commandJObject)
         {
